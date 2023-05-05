@@ -56,11 +56,35 @@
 # print()
 
 
-st = "VikeshTest"
-li = list(chr(64+i) for i in range(1,27))
-split_posi = []
-for i in st:
-    if i in li:
-        split_posi.append(st.index(i))
-print(st[split_posi[0]:split_posi[1]])
-print(st[split_posi[1]:])
+
+# for i in st:
+#     if i in li:
+#         split_posi.append(st.index(i))
+# # print(split_posi)
+# for i in range(len(split_posi)-1):
+#     print(st[split_posi[i] :split_posi[i+1]])
+# print(st[split_posi[-1]:])
+
+# st = "VikeshTestShyam"
+# # li = list(chr(64+i) for i in range(1,27))
+# split_posi = []
+# for i in st:
+#     if i.isupper():
+#         split_posi.append(st.index(i))
+    
+# for i in range(len(split_posi)-1):
+#     print(st[split_posi[i] :split_posi[i+1]])
+# print(st[split_posi[-1]:])
+
+# st = "ShyamGoli"
+# for i in range(1,len(st)):
+#     if st[i].isupper():
+#         print(st[0:i-1])
+
+x = 2
+y = 2
+count = 0
+if (x % 2 != 0 or y % 2 != 0):
+    count += 1
+count = count + ((y-x)//2)
+print(count)
